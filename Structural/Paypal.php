@@ -1,17 +1,10 @@
 <?php
-require_once './PaymentAdapter.php';
-class PayPal implements PaymentAdapter
-{
-   private $payPal;
 
-   public function __construct(PayPal $paypal)
+class PayPal
+{
+
+   public function sendPayment(int $amount)
    {
-      $this->paypal = $paypal;
-   }
-   public function addItem($itemName)
-   {
-   }
-   public function addPrice($amount)
-   {
+      echo "Paying via PayPal: " . $amount;
    }
 }
