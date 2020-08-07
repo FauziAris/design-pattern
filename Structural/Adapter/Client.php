@@ -11,6 +11,6 @@ $paypal = new paypalAdapter(new PayPal());
 $paypal->pay('45000');
 
 echo "<br>";
-// money booker
-$moneybooker = new SkrillAdapter(new Skrill());
-$moneybooker->pay('45000');
+// Skrill
+$skrill = new SkrillAdapter(new Skrill());
+$skrill->pay('45000');
